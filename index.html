@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kaira-Ecommerce</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+	font-family: Marcellus, Roboto, sans-serif;
+	 letter-spacing: 0.03rem;
+	 border: solid #f1f1f0;
+   width: 100%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--primary-color);">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-2 px-5" href="#">KAIRA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+      <ul class="navbar-nav p-3">
+        <li class="nav-item px-3 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            HOME
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Home Layout 1</a></li>
+            <li><a class="dropdown-item" href="#">Home Layout 2</a></li>
+            <li><a class="dropdown-item" href="#">Home Layout 3</a></li>
+            <li><a class="dropdown-item" href="#">Home Layout 4</a></li>
+          </ul>
+        </li>
+     <li class="nav-item px-3 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SHOP
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">shop Layout 1</a></li>
+            <li><a class="dropdown-item" href="#">shop Layout 2</a></li>
+            <li><a class="dropdown-item" href="#">shop Layout 3</a></li>
+            <li><a class="dropdown-item" href="#">shop Layout 4</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item px-3 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BLOG
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">blog Layout 1</a></li>
+            <li><a class="dropdown-item" href="#">blog Layout 2</a></li>
+            <li><a class="dropdown-item" href="#">blog Layout 3</a></li>
+            <li><a class="dropdown-item" href="#">blog Layout 4</a></li>
+          </ul>
+        </li>
+        <li class="nav-item px-3 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PAGES
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" aria-current="page" href="#">BLOG</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+        </li>
+      </ul>
+      <div class="navbaricon">
+      	<ul class="navbar-nav p-3">
+      		<li class="nav-item px-3">
+          <a class="nav-link" aria-current="page" href="#">WHISHLIST(0)</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" aria-current="page" href="#">CART(0)</a>
+        </li>
+
+        <li class="nav-item px-3">
+          <a class="nav-link" aria-current="page" href="#"></a>
+        </li>
+      	</ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME PAGE -->
+<div class="home p-lg-3 p-xl-3" style="background-color: var(--primary-color);">
+	<div class="container">
+		<div class="title w-xl-50 w-lg-50 w-sm-100 mx-auto">
+			<h1 class="display-1 p-3 text-center">New Collections</h1>
+			<p class="text-center p-1 text-secondary" style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas ut dolorum consequuntur, adipisci repellat! Eveniet commodi voluptatem voluptate, eum minima, in suscipit explicabo voluptatibus harum, quibusdam ex repellat eaque!</p>
+		</div>
+		<div class="homebody P-5">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cardwrapper d-flex">
+      	
+      	<div class="card">
+      		<img src="banner-image-1.jpg" class="card-img-top img-fluid">
+			<div class="card-body">
+				<h5 class="card-title fs-4 text-decoration-underline">SOFT LEATHER JACKET</h5>
+    			<p class="card-text text-secondary fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="card-link">DISCOVER NOW</a>
+			</div>
+		</div>
+		<div class="card">
+      		<img src="banner-image-2.jpg" class="card-img-top img-fluid">
+			<div class="card-body">
+				<h5 class="card-title fs-4 text-decoration-underline">OUT CROP SWEATER</h5>
+    			<p class="card-text text-secondary fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="card-link">DISCOVER NOW</a>
+			</div>
+		</div>
+		<div class="card">
+      		<img src="banner-image-3.jpg" class="card-img-top img-fluid">
+			<div class="card-body">
+				<h5 class="card-title fs-4 text-decoration-underline">SOFT LEATHER JACKET</h5>
+    			<p class="card-text text-secondary fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="card-link">DISCOVER NOW</a>
+			</div>
+		</div>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper d-flex">
+      	<div class="cardwrapper d-flex">
+      	
+      	<div class="card">
+      		<img src="banner-image-1.jpg" class="card-img-top img-fluid">
+			<div class="card-body">
+    			<h5 class="card-title fs-4 text-decoration-underline">SOFT LEATHER JACKET</h5>
+    			<p class="card-text text-secondary fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="card-link">DISCOVER NOW</a>
+			</div>
+		</div>
+		<div class="card">
+      		<img src="banner-image-2.jpg" class="card-img-top img-fluid">
+			<div class="card-body">
+    			<h5 class="card-title fs-4 text-decoration-underline">OUT CROP SWEATER</h5>
+    			<p class="card-text text-secondary fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="card-link">DISCOVER NOW</a>
+			</div>
+		</div>
+		<div class="card">
+      		<img src="banner-image-3.jpg" class="card-img-top img-fluid">
+			<div class="card-body">
+    			<h5 class="card-title fs-4 text-decoration-underline">SOFT LEATHER JACKET</h5>
+    			<p class="card-text text-secondary fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="card-link">DISCOVER NOW</a>
+			</div>
+		</div>
+      </div>  	
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper d-flex">
+      	<div class="cardwrapper d-flex">
+      	
+      	<div class="card">
+      		<img src="banner-image-1.jpg" class="card-img-top img-fluid">
+			<div class="card-body">
+				<h5 class="card-title fs-4 text-decoration-underline">SOFT LEATHER JACKET</h5>
+    			<p class="card-text text-secondary fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="card-link">DISCOVER NOW</a>
+			</div>
+		</div>
+		<div class="card">
+      		<img src="banner-image-2.jpg" class="card-img-top img-fluid">
+			<div class="card-body">
+				<h5 class="card-title fs-4 text-decoration-underline">SOFT LEATHER JACKET</h5>
+    			<p class="card-text text-secondary fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="card-link">DISCOVER NOW</a>
+			</div>
+		</div>
+		<div class="card">
+      		<img src="banner-image-3.jpg" class="card-img-top">
+			<div class="card-body">
+    			<h5 class="card-title fs-4 text-decoration-underline">OUT CROP SWEATER</h5>
+    			<p class="card-text text-secondary fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="card-link">DISCOVER NOW</a>
+			</div>
+		</div>
+
+      </div>
+    
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+		</div>
+	</div>
+</div>
+<!-- about page -->
+<div class="about p-xl-5 p-lg-5 p-sm-0">
+	<div class="container">
+		<div class="row g-3">
+			<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+				<div class="card p-1 border-0">
+  					<div class="card-body text-center p-2">
+  					<i class="fa-regular fa-calendar fs-2 text-secondary py-4"></i>
+    				<h5 class="card-title fs-2">Book An Appointment</h5>
+    				<p class="card-text text-center">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+  					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+				<div class="card border-0 p-2">
+  					<div class="card-body text-center p-2 p-sm">
+  					<i class="fa-solid fa-bag-shopping py-4 text-secondary fs-2"></i>
+    				<h5 class="card-title fs-2">Pick Up in Store</h5>
+    				<p class="card-text text-center">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+  					</div>
+				</div>		
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+				<div class="card p-2 border-0">
+  					<div class="card-body text-center p-2">
+  						<i class="fa-solid fa-gift text-secondary py-4 fs-2"></i>
+    				<h5 class="card-title fs-2">Special Packaging</h5>
+    				<p class="card-text">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+  					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+				<div class="card p-2 border-0">
+  					<div class="card-body text-center p-2">
+  					<i class="fa-solid fa-arrows-rotate text-secondary text-center py-4 fs-2 mx-auto"></i>
+    				<h5 class="card-title fs-2">Free Global Returns</h5>
+    				<p class="card-text">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+  					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- categories -->
+<div class="categoies">
+	<div class="container">
+		<div class="row g-4 g-sm-2">
+			<div class="col-xl-4 col-lg-4 col-md-6 col-12 mx-auto">
+				<div class="card border-0">
+					<img src="cat-large-item1.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+    					<h5 class="card-title text-secondary">SHOP FOR MEN</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-12 mx-auto">
+				<div class="card border-0">
+					<img src="cat-large-item2.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+    					<h5 class="card-title text-secondary">SHOP FOR WOMEN</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-12 mx-auto">
+				<div class="card border-0">
+					<img src="cat-large-item3.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+    					<h5 class="card-title text-secondary">SHOP ACCESSORIES</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- new arrivals -->
+<div class="new p-xl-2 p-lg-2 p-sm-0">
+	<div class="container-fluid">
+		<div class="container d-flex justify-content-between">
+			<h1 class="py-2">Our New Arrivals</h1>
+			<p class="text-muted py-3"> <a class="text-reset" href="#">VIEW ALL PRODUCTS</a></p>
+		</div>
+		<div class="newbody">
+			
+			<!-- carousal -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner w-75 mx-auto">
+    <div class="carousel-item active">
+      <div class="cardwrapper d-flex">
+        <div class="card">
+              <img src="product-item-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div><div class="card">
+              <img src="product-item-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper d-flex">
+      <div class="card">
+              <img src="product-item-5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div><div class="card">
+              <img src="product-item-7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper d-flex">
+         <div class="card">
+              <img src="product-item-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon rounded-circle p-2 bg-secondary" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon rounded-circle p-2 bg-secondary" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+
+    <!-- carousal end -->
+		</div>
+	</div>
+</div>
+
+
+<!-- COLLECTION -->
+<div class="collection p-lg-3 p-xl-3" style="background-color: var(--primary-color);">
+	<div class="container d-flex">
+		<img src="single-image-2.jpg" class="img-fluid w-50 w-sm-100">
+		<div class="collbody w-lg-50 w-xl-50 w-sm-100 p-xl-5 p-lg-5 p-sm-1 bg-white">
+			<h1 class="fs-1 p-3">Classic winter collection</h1>
+			<p class="text-secondary p-3 fs-5">Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis diam sed facilisis at cursus imperdiet cursus ac faucibus sit faucibus sit libero.</p>
+			<button type="button" class="btn border p-3 bg-dark text-white">SHOP COLLECTION</button>
+		</div>
+	</div>
+</div>
+
+<!-- Best selling page -->
+<div class="best p-xl-2 p-lg-2 p-sm-0">
+	<div class="container-fluid">
+		<div class="container d-flex justify-content-between">
+			<h1 class="py-2">Best Selling Items</h1>
+			<p class="text-muted py-3"> <a class="text-reset" href="#">VIEW ALL PRODUCTS</a></p>
+		</div>
+		<div class="bestbody">
+			 <!-- carousal -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner w-75 mx-auto">
+    <div class="carousel-item active">
+      <div class="cardwrapper d-flex">
+        <div class="card">
+              <img src="product-item-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div><div class="card">
+              <img src="product-item-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper d-flex">
+      <div class="card">
+              <img src="product-item-5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div><div class="card">
+              <img src="product-item-7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper d-flex">
+         <div class="card">
+              <img src="product-item-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon rounded-circle p-2 bg-secondary" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon rounded-circle p-2 bg-secondary" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+
+    <!-- carousal end -->
+		</div>
+	</div>
+</div>
+
+<!-- video page -->
+<div class="videoimg mt-2">
+	<div class="container-fluid position-relative" id="videobg">
+		          <div class="video-player position-absolute top-50 start-50 translate-middle">
+            <a class="youtube" href="https://www.youtube.com/watch?v=bTvB_feqye8">
+              <img src="text-pattern.png" alt="pattern" id="rotate">
+              <i class="fa-solid fa-play position-absolute top-50 start-50 translate-middle fs-1 text-light"></i>
+            </a>
+          </div>
+	</div>
+</div>
+
+<!-- compliments -->
+<div class="compliments p-xl-5 p-lg-5 p-sm-0" style="background-color: var(--primary-color);">
+	<div class="container p-xl-5 p-lg-5 py-sm-5 ">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active border bg-dark" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" class="border bg-dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" class="border bg-dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+<div class="compli w-xl-50 w-lg-50 w-sm-100 mx-auto">
+      	<h1 class="fs-3 p-2 text-center fw-bold">WE LOVE GOOD COMPLIMENTS</h1>
+      	<h3 class="fs-1 p-2 text-center text-secondary"> "More than expected crazy soft, flexible and best fitted while simple denim shirt."</h3>
+      	<p class="text-center text-secondary pb-5">CASUAL WAY</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+<div class="compli w-xl-50 w-sm-100 w-lg-50 mx-auto">
+      	<h1 class="fs-3 p-2 text-center fw-bold">WE LOVE GOOD COMPLIMENTS</h1>
+      	<h3 class="fs-1 p-2 text-center text-secondary"> "More than expected crazy soft, flexible and best fitted while simple denim shirt."</h3>
+      	<p class="text-center text-secondary pb-5">CASUAL WAY</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+<div class="compli w-xl-50 w-sm-100 w-lg-50 mx-auto">
+      	<h1 class="fs-3 p-2 text-center fw-bold">WE LOVE GOOD COMPLIMENTS</h1>
+      	<h3 class="fs-1 p-2 text-center text-secondary"> "More than expected crazy soft, flexible and best fitted while simple denim shirt."</h3>
+      	<p class="text-center text-secondary pb-5">CASUAL WAY</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+	</div>
+</div>
+
+<!-- Like products -->
+<div class="like p-2">
+	<div class="container-fluid">
+		<div class="container d-flex justify-content-between">
+			<h1 class="py-2">YOU MAY ALSO LIKE</h1>
+			<p class="text-muted py-3"> <a class="text-reset" href="#">VIEW ALL PRODUCTS</a></p>
+		</div>
+		<div class="likebody">
+			
+			<!-- carousal -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner w-75 mx-auto">
+    <div class="carousel-item active">
+      <div class="cardwrapper d-flex">
+        <div class="card">
+              <img src="product-item-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div><div class="card">
+              <img src="product-item-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper d-flex">
+      <div class="card">
+              <img src="product-item-5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div><div class="card">
+              <img src="product-item-7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper d-flex">
+         <div class="card">
+              <img src="product-item-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="product-item-8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Florish One Piece</h5>
+                  <p class="card-text">$95</p>
+                  <a href="#" class="btn btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon rounded-circle p-2 bg-secondary" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon rounded-circle p-2 bg-secondary" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+
+    <!-- carousal end -->
+		</div>
+
+	</div>
+</div>
+
+<!-- bLOG POST -->
+
+<div class="blog p-2">
+	<div class="container">
+		<div class="blogtitle d-flex justify-content-between">
+			<h1 class="py-2">READ BLOG POSTS</h1>
+			<p class="text-muted py-3"> <a class="text-reset" href="#">VIEW ALL PRODUCTS</a></p>
+		</div>
+		<div class="blogbody">
+			<div class="row gx-5">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+					<div class="card card1 border-0">
+						<img src="post-large-image1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text text-secondary">FASHION / JUL 11, 2022</p>
+    						<h5 class="card-title">HOW TO LOOK OUTSTANDING IN PASTEL</h5>
+    						<p class="card-text text-secondary">Dignissim lacus,turpis ut suspendisse vel tellus.Turpis purus,gravida orci,fringilla...</p>
+  						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+					<div class="card card1 border-0">
+						<img src="post-large-image3.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text text-secondary">FASHION / JUL 11, 2022</p>
+    						<h5 class="card-title">TOP 10 FASHION TREND FOR SUMMER</h5>
+    						<p class="card-text text-secondary">Turpis purus, gravida orci, fringilla dignissim lacus, turpis ut suspendisse vel tellus...</p>
+  						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+					<div class="card card1 border-0">
+						<img src="post-large-image3.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text text-secondary">FASHION / JUL 11, 2022</p>
+    						<h5 class="card-title">CRAZY FASHION WITH UNIQUE MOMENTS</h5>
+    						<p class="card-text text-secondary">Turpis purus, gravida orci, fringilla dignissim lacus, turpis ut suspendisse vel tellus...</p>
+  						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- LOGO PAGE -->
+<div class="logo p-xl-5 p-lg-5 p-sm-0">
+	<div class="container py-lg-5 py-xl-5 py-sm-1">
+		<div class="row g-4 py-lg-5 py-xl-5 p-sm-1">
+			<div class="col-xl-2 col-lg-2 col-md-3 col-4">
+				<img src="logo1.png" class="img-fluid">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-4">
+				<img src="logo2.png" class="img-fluid">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-4">
+				<img src="logo3.png" class="img-fluid">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-4">
+				<img src="logo4.png" class="img-fluid">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-4">
+				<img src="logo5.png" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- signup page -->
+<div class="signup p-5"  style="background-color: var(--primary-color);">
+	<div class="container">
+		<div class="image w-lg-75 w-xl-75 w-sm-100 mx-auto py-sm-5 p-lg-5 p-xl-5">
+			<h1 class="text-center fs-1 fw-bold">SIGN UP FOR OUR NEWS LETTERS</h1>
+			<label for="inputPassword5" class="form-label"></label>
+			<input type="email" id="inputPassword5" placeholder="Your Email Address" class="form-control fs-5 m-2" aria-describedby="passwordHelpBlock">
+			<button class="btn w-100 m-2 bg-dark text-white">SIGN UP</button>
+		</div>
+	</div>
+	<div class="row position-relative">
+		<div class="col-xl-2 col-lg-2 col-md-4 col-4 p-0 m-0">
+			<img src="insta-item1.jpg" class="img-fluid">
+		</div>
+		<div class="col-xl-2 col-lg-2 col-md-4 col-4 p-0 m-0">
+			<img src="insta-item2.jpg" class="img-fluid">
+		</div>
+		<div class="col-xl-2 col-lg-2 col-md-4 col-4 p-0 m-0">
+			<img src="insta-item3.jpg" class="img-fluid">
+		</div>
+		<div class="col-xl-2 col-lg-2 col-md-4 col-4 p-0 m-0">
+			<img src="insta-item4.jpg" class="img-fluid">
+		</div>
+		<div class="col-xl-2 col-lg-2 col-md-4 col-4 p-0 m-0">
+			<img src="insta-item5.jpg" class="img-fluid">
+		</div>
+		<div class="col-xl-2 col-lg-2 col-md-4 col-4 p-0 m-0">
+			<img src="insta-item6.jpg" class="img-fluid">
+	</div>
+	<button type="button" class="btn bg-dark text-white w-lg-25 w-xl-25 w-md-50 w-sm-50 position-absolute top-100 start-50 translate-middle">Follow us on Instagram</button>
+	</div>
+</div>
+<!-- footer page -->
+<div class="footer p-xl-5 p-lg-5 p-sm-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+				<img src="main-logo.png" class="p-3">
+				<p class="fs-5 text-secondary p-1">Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
+				<div class="footicon d-flex p-xl-3 p-lg-3 p-sm-0">
+					<i class="fa-brands fa-facebook p-2 fs-2"></i>
+					<i class="fa-brands fa-twitter p-2 fs-2"></i>
+					<i class="fa-brands fa-youtube p-2 fs-2"></i>
+					<i class="fa-brands fa-pinterest p-2 fs-2"></i>
+					<i class="fa-brands fa-instagram p-2 fs-2"></i>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+				<h1 class="text-center">QUCIK LINKS</h1>
+				<div class="foota">
+				<a href="">HOME</a><br>
+				<a href="">ABOUT</a><br>
+				<a href="">SERVICES</a><br>
+				<a href="">SINGLE ITEM</a><br>
+				<a href="">CONTACT</a><br>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+				<h1 class="text-center">HELP & INFO</h1>
+				<div class="foota">
+				<a href="">TRACK YOUR ORDER</a><br>
+				<a href="">RETURN & EXCHANGE</a><br>
+				<a href="">SHIPING + DELIVERY</a><br>
+				<a href="">FIND US EASY</a><br>
+				<a href="">CONTACT US</a><br>
+				<a href="">FAQ'S</a>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+				<h1 class="text-center">CONTACT US</h1>
+				<p >Do you have any questions or suggestions?</p>
+				<div class="foota">
+					<a href="">contact@yourcompany.com</a>
+					<p>Do you need support? Give us a call.</p>
+					<a href="">+43 732 11 52 78</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-12">
+				<p class="p-2">we ship with:</p>
+					<img src="card.png" class="p-2">
+					<img src="card2.png" class="p-2">
+			</div>
+			<div class="col-lg-6 col-12 d-flex align-middle">
+				<p class="p-2">Payment option:</p>
+				<img src="card1.png" class="p-2">
+				<img src="card3.png" class="p-2">
+				<img src="card4.png" class="p-2">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root{
+	--primary-color: #f1f1f0;
+}
+
+/*video image*/
+#videobg{
+	background-image: url(video-image.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+}
+#rotate{
+	  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* End at 360 degrees (one full turn) */
+  }
+}
+
+@media(max-width: 576px){
+	.home{
+		padding: 0;
+		width: 100% !important;
+	}
+	.home .container{
+		padding: 0;
+		margin: 0;
+	}
+}
+
+/*sign up page*/
+.signup{
+	background-image: url(pattern-bg.png);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	/*border: solid;*/
+	overflow: hidden;
+}
+/*collection page*/
+@media(max-width: 765px)
+{
+.collection .container{
+	flex-direction: column;
+}
+.container img{
+	margin: auto;
+}
+.collbody{
+	margin: auto;
+}
+}
+
+/*card sliders*/
+.card{
+    width: calc(100/3);
+    margin: 10px;
+} 
+.card:hover{
+	/*margin: 10px;*/
+	transform: scale(0.9);
+	/*box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);*/
+}
+   @media(max-width: 576px)
+   {
+    .cardwrapper .card:last-child{
+      display: none;
+    }
+   }
+
+/*footer*/
+.footer{
+	width: 100%;
+}
+.foota a{
+	text-decoration: none;
+	color: black;
+}
+.foota a:hover{
+	text-decoration: underline;
+	transition: 4s linear;
+}
